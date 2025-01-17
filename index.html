@@ -1,94 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <!-- Header Section -->
-  <header>
-    <div class="container">
-      <h1>Your Name</h1>
-      <p>Job Title or Role | City, Country</p>
-      <a href="#contact" class="cta-btn">Contact Me</a>
-    </div>
-  </header>
-
-  <!-- About Me Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>Hello! I am a passionate [Your Job Title] with [X] years of experience in [Your Field]. I specialize in [Key Skills], and I’m looking to contribute my expertise to help companies grow and thrive.</p>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul>
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
-        <li>Skill 4</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="section">
-    <div class="container">
-      <h2>Work Experience</h2>
-      <div class="job">
-        <h3>Job Title at Company Name</h3>
-        <p><strong>Duration:</strong> [Start Date] - [End Date]</p>
-        <p><strong>Responsibilities:</strong> Brief description of your role and key achievements.</p>
-      </div>
-      <div class="job">
-        <h3>Job Title at Company Name</h3>
-        <p><strong>Duration:</strong> [Start Date] - [End Date]</p>
-        <p><strong>Responsibilities:</strong> Brief description of your role and key achievements.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Project Title</h3>
-        <p>Brief description of the project, your role, and the results.</p>
-      </div>
-      <div class="project">
-        <h3>Project Title</h3>
-        <p>Brief description of the project, your role, and the results.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form action="mailto:your-email@example.com" method="POST" enctype="multipart/form-data">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer Section -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Your Name | All Rights Reserved</p>
-    </div>
-  </footer>
-
-</body>
-</html>
+<form action="//submit.form" id="EmploymentApplication100" method="post" onsubmit="return ValidateForm(this);">
+    <script type="text/javascript">
+    function ValidateForm(frm) {
+    if (frm.First_Name.value == "") { alert('First name is required.'); frm.First_Name.focus(); return false; }
+    if (frm.Last_Name.value == "") { alert('Last name is required.'); frm.Last_Name.focus(); return false; }
+    if (frm.Email_Address.value == "") { alert('Email address is required.'); frm.Email_Address.focus(); return false; }
+    if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.Email_Address.focus(); return false; }
+    if (frm.Position.value == "") { alert('Position is required.'); frm.Position.focus(); return false; }
+    if (frm.Phone.value == "") { alert('Phone is required.'); frm.Phone.focus(); return false; }
+    return true; }
+    </script>
+    <table border="0" cellpadding="5" cellspacing="0">
+    <tr> <td style="width: 50%">
+    <label for="First_Name"><b>First name *</b></label><br />
+    <input name="First_Name" type="text" maxlength="50" style="width:100%;max-width: 260px" />
+    </td> <td style="width: 50%">
+    <label for="Last_Name"><b>Last name *</b></label><br />
+    <input name="Last_Name" type="text" maxlength="50" style="width:100%;max-width: 260px" />
+    </td> </tr> <tr> <td colspan="2">
+    <label for="Email_Address"><b>Email *</b></label><br />
+    <input name="Email_Address" type="text" maxlength="100" style="width:100%;max-width: 535px" />
+    </td> </tr> <tr> <td colspan="2">
+    <label for="Portfolio"><b>Portfolio website</b></label><br />
+    <input name="Portfolio" type="text" maxlength="255" value="http://" style="width:100%;max-width: 535px" />
+    </td> </tr> <tr> <td colspan="2">
+    <label for="Position"><b>Position you are applying for *</b></label><br />
+    <input name="Position" type="text" maxlength="100" style="width:100%;max-width: 535px" />
+    </td> </tr> <tr> <td>
+    <label for="Salary"><b>Salary requirements</b></label><br /> <input name="Salary" type="text" maxlength="50" style="width:100%;max-width: 260px" /> </td> <td>
+    <label for="StartDate"><b>When can you start?</b></label><br />
+    <input name="StartDate" type="text" maxlength="50" style="width:100%;max-width: 260px" />
+    </td> </tr> <tr> <td>
+    <label for="Phone"><b>Phone *</b></label><br />
+    <input name="Phone" type="text" maxlength="50" style="width:100%;max-width: 260px" />
+    </td> <td>
+    <label for="Fax"><b>Fax</b></label><br />
+    <input name="Fax" type="text" maxlength="50" style="width:100%;max-width: 260px" />
+    </td> </tr> <tr> <td colspan="2">
+    <label for="Relocate"><b>Are you willing to relocate?</b></label><br />
+    <input name="Relocate" type="radio" value="Yes" checked="checked" /> Yes      
+    <input name="Relocate" type="radio" value="No" /> No      
+    <input name="Relocate" type="radio" value="NotSure" /> Not sure
+    </td> </tr> <tr> <td colspan="2">
+    <label for="Organization"><b>Last company you worked for</b></label><br />
+    <input name="Organization" type="text" maxlength="100" style="width:100%;max-width: 535px" />
+    </td> </tr> <tr> <td colspan="2">
+    <label for="Reference"><b>Reference / Comments / Questions</b></label><br />
+    <textarea name="Reference" rows="7" cols="40" style="width:100%;max-width: 535px"></textarea>
+    </td> </tr> <tr> <td colspan="2" style="text-align: center;">
+    <div style="float: right"> <a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
+    <script src="https://www.100forms.com/js/FORMKEY:QTBSKQWB6KEX/SEND:my@email.com" type="text/javascript"></script>
+    <input name="skip_submit" type="submit" value="Send Application" />
+    </td> </tr>
+    </table>
+    </form>
